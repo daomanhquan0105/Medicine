@@ -1,0 +1,120 @@
+﻿
+
+
+<div class="header">
+    <div class="container">
+        <div class="row align-self-center">
+            <div class="col-6 col-sm-2 col-lg-2 col-xl-1 text-left">
+                <a href="#" class="mr-2"><img src="~/Images/Icon-groups/tw-white.svg" class="img-fluid" /></a>
+                <a href="#" class="mr-2"><img src="~/Images/Icon-groups/yt-white.svg" class="img-fluid" /></a>
+                <a href="#" ><img src="~/Images/Icon-groups/fb-white.svg" class="img-fluid" /></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 user-action text-md-left text-right">
+                <a href="#">Đăng ký</a> 
+                <a href="javascript:;" data-toggle="modal" data-target="#LoginModal">Đăng nhập</a>
+            </div>
+            <div class="col-lg-5 col-xl-6 text-center d-none d-lg-block content-text">
+                Chuyển phát nhanh và miễn phí nội thành Hà Nội trong vòng 24 giờ
+            </div>
+
+            <div class="col-sm-5 col-lg-3 text-right list-like d-none d-sm-block">
+                Danh sách yêu thích
+                <a href="#" class="icon-heart">
+                    <img src="~/Images/Icon-groups/icon-heart.svg" class="img-fluid ml-2" />
+                    <span>2</span>
+                </a>
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="container">
+    <div class="header-top">
+        <div class="row justify-content-center">
+            <div class="col-4 col-lg-3 align-self-center">
+                <a href="#"><img src="~/Images/Icon-groups/icon-logo.svg" class="img-fluid ml-0 ml-md-2 ml-lg-3" /></a>
+            </div>
+            <div class="col-7 col-lg-6 align-self-center">
+                <form>
+                    <div class="input-group search">
+                        <input class="form-control rounded-pill" type="text" />
+                        <button class="btn rounded-pill btn-search">
+                            tìm kiếm
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-1 cart d-none d-lg-block align-self-center">
+                <button class="btn rounded-circle btn-cart">
+                    <img src="~/Images/Icon-groups/icon-cart.svg" class="img-fluid" />
+                </button>
+                <span>2</span>
+            </div>
+            <div class="col-lg-2 information d-none d-lg-block align-self-center">
+                <div class="text-center title">Hotline / Zalo: </div>
+                <div class="text-center"><a href="#" class="call">0123.456.789</a></div>
+            </div>
+            <div class="col-1 d-block d-lg-none align-self-center icon-menu-mobile">
+                <a href="javascript:;" onclick="MobileAction()"><i class="far fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-horizontal">
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">giới thiệu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SHIP THUỐC NHANH</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">TƯ VẤN TRỰC TUYẾN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">GÓC SỨC KHỎE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">LIÊN HỆ</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@Html.Action("MenuMobile", "Home")
+
+
+<div class="modal animate__animated animate__backInDown animate__fast" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Đăng nhập</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-4 col-form-label">Tài khoản</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Tài khoản">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-4 col-form-label">Mật khẩu</label>
+                        <div class="col-8">
+                            <input type="password" class="form-control" placeholder="Mật khẩu">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-block" data-dismiss="modal" aria-label="Close">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+</div>

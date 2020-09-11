@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "CartInformation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container cart-information">
+    <h2>Giỏ hàng</h2>
+    <table class="table" id="tablelist">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="media">
+                        <a href="#"><img src="~/Images/Medicines/4.svg" class="mr-3" /></a>
+                        <div class="media-body align-self-center">
+                            <div class="name">
+                                Apfu
+                            </div>
+                            <div class="price">
+                                <span>Mã sản phẩm: 00011354 </span><br />
+                                <span>Hộp 1 vỉ x 10 viên</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>130000</td>
+                <td>
+                    <div class="form-group">
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <a class="input-group-text" onclick="ClickToDown('#Quantity1')">-</a>
+                            </div>
+                            <input type="text" min="1" value="1" max="100" oninput="CheckInput('#Quantity1')" id="Quantity1" class="form-control">
+                            <div class="input-group-append">
+                                <a class="input-group-text" onclick="ClickToUp('#Quantity1')">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>130 000</td>
+                <td>
+                    <a href="javascript:;" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="media">
+                        <a href="#"><img src="~/Images/Medicines/4.svg" class="mr-3" /></a>
+                        <div class="media-body align-self-center">
+                            <div class="name">
+                                Bpfu
+                            </div>
+                            <div class="price">
+                                <span>Mã sản phẩm: 00011354 </span><br />
+                                <span>Hộp 1 vỉ x 10 viên</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>130000</td>
+                <td>
+                    <div class="form-group">
+                        <div class="input-group mr-2">
+                            <div class="input-group-prepend">
+                                <a class="input-group-text" onclick="ClickToDown('#Quantity')">-</a>
+                            </div>
+                            <input type="text" min="1" value="1" max="100" oninput="CheckInput('#Quantity')" id="Quantity" class="form-control">
+                            <div class="input-group-append">
+                                <a class="input-group-text" onclick="ClickToUp('#Quantity')">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>130 000</td>
+                <td>
+                    <a href="javascript:;" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="row">
+        <div class="col-12 col-lg-6 align-self-lg-start">
+             <textarea placeholder="Ghi chúc cho người bán" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="col-12 col-lg-6 align-self-md-end text-right">
+            <div class="price">
+                <span class="mr-3 mr-lg-5">Tổng tiền:</span> 500000
+            </div>
+            <div class="information-ship">
+                Phí vận chuyển và thuế tính khi thanh toán
+            </div>
+            <div class="bottom">
+                <a href="#" class="btn btn-light">TIẾP TÚC MUA SẮM</a>
+                <a href="#" class="btn btn-light">CẬP NHẬP GIỎ HÀNG</a>
+                <a href="#" class="btn btn-submit-cart">XÁC NHẬN</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <script>
+        $("#tablelist").DataTable();
+    </script>
+}

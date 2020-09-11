@@ -1,0 +1,279 @@
+﻿
+@{
+    ViewBag.Title = "ListProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Action("BannerProduct","Home")
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 d-none d-lg-block">
+            <div class="accordion">
+                <div class="title">
+                    Lọc bằng
+                </div>
+                <hr />
+                <div class="accordion-title">
+                    Danh mục sản phẩm
+                </div>
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                            <i class="fas fa-caret-right mr-2"></i> Thuốc kê đơn
+                        </button>
+                    </div>
+
+                    <div id="collapseone" class="collapse show">
+                        <div class="form-group change-style mr-3">
+                            <input type="checkbox">
+                            <label>Check me out</label>
+                        </div>
+                        <div class="form-group change-style mr-3">
+                            <input type="checkbox">
+                            <label>Check me out</label>
+                        </div>
+                        <div class="form-group change-style mr-3">
+                            <input type="checkbox">
+                            <label>Check me out</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                            <i class="fas fa-caret-right mr-2"></i> Vitamin
+                        </button>
+                    </div>
+                    <div id="collapse-2" class="collapse show">
+                        <div class="form-group change-style mr-3">
+                            <input type="checkbox">
+                            <label>Check me out</label>
+                        </div>
+                        <div class="form-group change-style mr-3">
+                            <input type="checkbox">
+                            <label>Check me out</label>
+                        </div>
+                        <div class="form-group change-style mr-3">
+                            <input type="checkbox">
+                            <label>Check me out</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-caret-right mr-2"></i>Thực phẩm chức năng
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            <i class="fas fa-caret-right mr-2"></i>Ăn kiếng / Dinh dưỡng
+                        </button>
+                    </div>
+
+                    <div id="collapsefour" class="collapse">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <i class="fas fa-caret-right mr-2"></i> Chăm sóc cá nhân
+                        </button>
+                    </div>
+                    <div id="collapsefive" class="collapse">
+                    </div>
+                </div>
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <i class="fas fa-caret-right mr-2"></i> Chăm sóc trẻ
+                        </button>
+                    </div>
+                    <div id="collapsefive" class="collapse">
+                    </div>
+                </div>
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <i class="fas fa-caret-right mr-2"></i>Chăm sóc da, tóc
+                        </button>
+                    </div>
+                    <div id="collapsefive" class="collapse">
+                    </div>
+                </div>
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <i class="fas fa-caret-right mr-2"></i>Chăm sóc răng miệng
+                        </button>
+                    </div>
+                    <div id="collapsefive" class="collapse">
+                    </div>
+                </div>
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <i class="fas fa-caret-right mr-2"></i> Thiết bị y tế
+                        </button>
+                    </div>
+                    <div id="collapsefive" class="collapse">
+                    </div>
+                </div>
+                <div>
+                    <div class="colla-title">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            <i class="fas fa-caret-right mr-2"></i>Thảo mộc
+                        </button>
+                    </div>
+                    <div id="collapsefive" class="collapse">
+                    </div>
+                </div>
+
+                <div class="accordion-title">
+                    Đơn giá
+                </div>
+                <div class="slide">
+                    <input type="text" id="amount" readonly>
+                    <div id="slider-range"></div>
+                </div>
+                <div class="accordion-title">
+                    Đối tượng sử dụng
+                </div>
+                <div class="Object-use">
+                    <div class="form-group change-style">
+                        <input type="checkbox">
+                        <label>Check me out</label>
+                    </div>
+                    <div class="form-group change-style ">
+                        <input type="checkbox">
+                        <label>Check me out</label>
+                    </div>
+                    <div class="form-group change-style ">
+                        <input type="checkbox">
+                        <label>Check me out</label>
+                    </div>
+                </div>
+            </div>
+            <div class="tag">
+                <div class="title">Tag</div>
+                <hr />
+                <button class="btn btn-light rounded-pill tag-name">Organic</button>
+                <button class="btn btn-light rounded-pill tag-name">Organic</button>
+            </div>
+            <div class="fast-sell-menu">
+                <div class="title">
+                    Bán chạy nhất
+                </div>
+                <hr />
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="media">
+                        <a href="#"><img src="~/Images/Medicines/3.svg" class="mr-2" /></a>
+                        <div class="media-body">
+                            <div class="name">
+                                <a href="#">Viên Sủi Mutivitamins + Biotin Swiss Energy 20 Viên</a>
+                            </div>
+                            <div class="price">
+                                130.000đ <span class="float-right">/ Tuýp</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light d-none d-sm-block">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active nav-show-table">
+                            <a href="javascript:;" class="navbar-brand" onclick="ShowProductTable()">
+                                <i class="fab fa-buromobelexperte"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-show-ballot">
+                            <a href="javascript:;" class="navbar-brand " onclick="ShowProductBallot()"><i class="far fa-ballot"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <span tabindex="-1" aria-disabled="true">14 sản phẩm</span>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <label class="mr-2">Lọc theo:</label>
+                        <select class="form-control rounded-pill">
+                            <option>Giá từ thấp đến cao</option>
+                        </select>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="row">
+                @for (int i = 0; i < 18; i++)
+                {
+                    <div class="col-6 col-sm-4 col-xl-3 mb-4 show-table active">
+                        <div class="card text-left">
+                            <a href="#" class="image"><img src="~/Images/Medicines/1.svg" class="card-img-top" /></a>
+                            <div class="card-body">
+                                <div class="name">
+                                    <a href="#">Viên Sủi Mutivitamins + Biotin Swiss Energy 20 Viên</a>
+                                </div>
+                                <div class="price">
+                                    130.000đ <span class="float-right">/ Tuýp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media show-ballot">
+                        <a href="#" class="image"><img src="~/Images/Medicines/1.svg" class="card-img-top" /></a>
+                        <div class="media-body">
+                            <div class="name">
+                                <a href="#">Viên Sủi Mutivitamins + Biotin Swiss Energy 20 Viên</a>
+                            </div>
+                            <div class="price">
+                                130.000đ <span class="ml-4">/ Tuýp</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="tag d-block d-lg-none">
+        <div class="title">Tag</div>
+        <hr />
+        <button class="btn btn-light rounded-pill tag-name">Organic</button>
+        <button class="btn btn-light rounded-pill tag-name">Organic</button>
+    </div>
+    <div class="fast-sell d-block d-lg-none">
+        <div class="title">
+            BÁN CHẠY NHẤT
+        </div>
+        <hr />
+        @Html.Action("SliderPartialView", "Home")
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        function ShowProductTable() {
+            $(".show-table").toggleClass('active animate__backInLeft animate__slow');
+            $(".show-ballot").toggleClass('active animate__backInLeft animate__slow');
+            $('.navbar .nav-item.nav-show-table').toggleClass('active');
+            $('.navbar .nav-item.nav-show-ballot  ').toggleClass('active');
+        }
+        function ShowProductBallot() { 
+            $(".show-table").toggleClass('active animate__backInLeft animate__slow');
+            $(".show-ballot").toggleClass('active animate__backInLeft animate__slow');
+            $('.navbar .nav-item.nav-show-table').toggleClass('active');
+            $('.navbar .nav-item.nav-show-ballot').toggleClass('active');
+        }
+    </script>   
+ }
