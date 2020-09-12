@@ -66,6 +66,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 input, select, textarea {
     &.form-control {
         max-width: 100%;
@@ -1070,9 +1072,7 @@ img.card-img-top{
 }
 .Feed-back {
     background: $color-config;
-    padding: 2rem 4rem 2.5rem 3.5rem;
-
-
+    padding: 2rem 4.375rem 2.625rem 3.75rem;
 
     .owl-carousel {
         .card {
@@ -1812,6 +1812,13 @@ form {
     }
 }
 
+
+@media (min-width: 1300px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1200px;
+        padding:0;
+    }
+}
 
 
 @media(max-width:1024px) {

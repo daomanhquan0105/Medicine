@@ -722,7 +722,7 @@ img.card-img-top {
 
 .Feed-back {
   background: linear-gradient(90deg, #FF4449 0%, #FF710B 100%);
-  padding: 2rem 4rem 2.5rem 3.5rem; }
+  padding: 2rem 4.375rem 2.625rem 3.75rem; }
   .Feed-back .owl-carousel .card {
     background: none; }
     .Feed-back .owl-carousel .card .card-body {
@@ -1228,6 +1228,11 @@ form .Delivery-Address {
         margin-bottom: 6px; }
     .footer .footer-end .contact {
       margin-top: 1rem; }
+
+@media (min-width: 1300px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1200px;
+    padding: 0; } }
 
 @media (max-width: 1024px) {
   .menu-horizontal ul li {
